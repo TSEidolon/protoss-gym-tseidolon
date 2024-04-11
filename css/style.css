@@ -140,13 +140,14 @@ header {
 .classes {
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
   grid-gap: 30px;
   justify-items: center;
+  justify-content: center;
 }
 
-.card-one, .card-two {
+.card-one, .card-two, .card-three{
   transform: translateX(-20px);
 }
 
