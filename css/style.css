@@ -17,6 +17,8 @@
   background-image: url(/assets/risen-wang-20jX9b35r_M-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  /* background-attachment: fixed; */
+
 }
 
 li {
@@ -129,6 +131,7 @@ header {
     padding: 0 4rem;
     gap: 200px;
 
+
   }
 
   .hero i {
@@ -206,8 +209,9 @@ header {
 .testimonial {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 80vh;
 }
 
 .testimonial-top {
@@ -231,8 +235,18 @@ header {
   border-color: black;
   height: calc(250px * 1.618);
   width: 250px;
-
 }
+
+.testimonial-cards:nth-child(1) {
+  transition-delay: 100ms;
+}
+.testimonial-cards:nth-child(2) {
+  transition-delay: 200ms;
+}
+.testimonial-cards:nth-child(3) {
+  transition-delay: 300ms;
+}
+
 
 .testimonial-cards-stars {
   font-size: 1.7rem;
@@ -267,6 +281,25 @@ header {
   font-size: 1.2rem;
 }
 
+.testimonial-logo {
+  font-size: 2.2rem;
+}
+
+
+/* Scroll Animations for Testimonials section */
+.testimonial-hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all .5s;
+}
+
+.testimonial-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
 
 
 /* Responsiveness */
@@ -294,5 +327,11 @@ header {
   .dropdown_menu {
     left: 2rem;
     width: unset;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .testimonial-hidden {
+    transition: none;
   }
 }
