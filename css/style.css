@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #DD5B55 ;
-  --secondary-color: #7a0117;
+  --primary-color: #272343 ;
+  --secondary-color: #6D9886;
   --tertiary-color: white;
 }
 
@@ -13,8 +13,10 @@
 
 .header-navbar-hero {
   height: 100vh;
-  background-color: black;
-  background-image: url(/assets/risen-wang-20jX9b35r_M-unsplash.jpg);
+  background-image: 
+    url(/assets/risen-wang-20jX9b35r_M-unsplash.jpg),
+    url("/assets/FrameOne.svg");
+  background-blend-mode: darken;
   background-size: cover;
   background-position: center;
   /* background-attachment: fixed; */
@@ -30,7 +32,7 @@ li {
   font-size: 1rem;
 }
 .header-navbar-hero a:hover {
-  color:var(--primary-color);
+  color:var(--secondary-color);
 }
 
 /* Header */
@@ -46,6 +48,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 
 .navbar .logo a {
@@ -80,7 +83,7 @@ header {
 
 .action_btn:hover {
   scale: 1.05;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   background-color: var(--tertiary-color);
 }
 
@@ -130,28 +133,55 @@ header {
     text-shadow: 2px 4px 4px black;
     padding: 0 4rem;
     gap: 200px;
-
-
   }
 
-  .hero i {
-    font-size: 7rem;
+  .hero-svg {
+    height: 250px;
   
   }
 
 /* Classes */
 .classes {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 90vh;
+  border: solid;
+  border-color: yellow;
+}
+
+.classes-header {
+  font-size: 2.5rem;
+  padding-bottom: 5px;
+}
+.card-classes-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   grid-gap: 30px;
   justify-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: solid;
+  border-color: pink;
+  padding-top: 30px;
+
+}
+
+.card-classes:hover {
+  outline: solid;
+  outline-color: black;
+  transform: translateX(-10px);
+  transition: 250ms;
+
 }
 
 .card-one, .card-two, .card-three{
   transform: translateX(-20px);
+
 }
 
 .card-classes {
@@ -209,9 +239,11 @@ header {
 .testimonial {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
+  padding: 30px 0;
+  gap: 30px;
 }
 
 .testimonial-top {
@@ -223,6 +255,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   gap: 20px
 }
 
