@@ -410,19 +410,28 @@ header {
   border-radius: 100px 0px 100px 0px;
 }
 
-/* Scroll Animations for Testimonials section */
-.testimonial-hidden {
+/* Scroll Animations*/
+.hidden {
   opacity: 0;
   transform: translateX(-100%);
   transition: all .5s;
 }
 
-.testimonial-show {
+.show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
 }
 
+.hidden1 {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show1 {
+  opacity: 1;
+
+}
 
 
 
@@ -455,7 +464,7 @@ header {
 }
 
 @media (prefers-reduced-motion) {
-  .testimonial-hidden {
+  .hidden {
     transition: none;
   }
 }
