@@ -318,6 +318,77 @@ header {
   font-size: 2.2rem;
 }
 
+.about {
+  height: 80vh;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+.about-container-left {
+  min-width: 500px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 0px;
+}
+
+.about-container-left-cards {
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ gap: 20px;
+ height: 200px;
+}
+
+.about-cards {
+  /* border: solid;
+  border-color: black;
+  border-width: thin; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 150px;
+  gap: 10px;
+  padding: 10px;
+  color: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.74) 0px 3px 8px;
+}
+
+.about-bold {
+  font-size: 2.2rem;
+  font-weight: bold;
+
+}
+
+.about-regular {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.about-cards-two {
+ text-align: center;
+}
+
+.about-container-right {
+  min-width: 500px;
+  max-width: 700px;
+}
+
+.about-container-left-bold {
+  font-size: 2.5rem;
+}
+.about-container-left-regular {
+  font-size: 1.2rem;
+}
+
 
 /* Scroll Animations for Testimonials section */
 .testimonial-hidden {
