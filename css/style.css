@@ -389,6 +389,26 @@ header {
   font-size: 1.2rem;
 }
 
+.about-container-right {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 10px;
+}
+
+.about-images {
+  height: 269px;
+  width: 269px;
+  user-select: none;
+}
+
+.about-images-one, .about-images-four {
+  border-radius: 0px 100px 0px 100px;
+}
+
+.about-images-two, .about-images-three {
+  border-radius: 100px 0px 100px 0px;
+}
 
 /* Scroll Animations for Testimonials section */
 .testimonial-hidden {
