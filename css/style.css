@@ -453,7 +453,7 @@ header {
 /* Footer */
 .footer {
   width: 100%;
-  min-height: 300px;
+  min-height: 250px;
   background-color: black;
 }
 
@@ -473,14 +473,14 @@ header {
 }
 
 .footer-column p {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: bold;
   padding-bottom: 5px;
   color: var(--tertiary-color);
 }
 
 .footer-column li {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   padding: 3px 0px;
 }
 
