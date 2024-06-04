@@ -249,7 +249,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   min-height: 80vh;
-  padding: 30px 0;
+  padding: 30px 25px;
   gap: 30px;
   background-image: 
   url(/assets/ProtossGymLogoBlack.svg);
@@ -329,7 +329,7 @@ header {
 
 .testimonial-logo {
   max-width: 800px;
-  min-width: 500px;
+  min-width: 400px;
   max-height: 70px;
   display: flex;
   justify-content: center;
@@ -439,7 +439,8 @@ header {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   grid-gap: 10px;
-
+  justify-content: center;
+  align-content: center;
 }
 
 .about-images {
@@ -567,7 +568,6 @@ header {
     padding: 50px 0px;
   }
 
-
   .card-one, .card-two, .card-three{
     transform: translateX(0px);
   }
@@ -580,23 +580,56 @@ header {
     padding: 25px 0px;
   }
 
-
 }
+@media(max-width: 800px) {
+  .card-classes-container {
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(1, auto);
+}
+  .testimonial-cards-container {
+  flex-direction: column;
+}
+}
+
 
 @media(max-width: 576px) {
   .dropdown_menu {
     left: 2rem;
     width: unset;
   }
+  section.hero {
+    gap: 100px;
+  }
+  .testimonial {
+    padding: 0px 25px;
+  }
+  .testimonial-top {
+    text-align: center;
+  }
 
-  .card-classes-container {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(1, auto);
+  .testimonial-logo {
+    padding-left: 0px;
+  }
+ 
+  .about {
+    padding: 0px 25px;
+  }
+  .about-images {
+    height: 169px;
+    width: 169px;
+    user-select: none;
   }
 }
 
 @media (prefers-reduced-motion) {
   .hidden {
+    transition: none;
+  }
+  .hidden1 {
+    transition: none;
+  }
+
+  .card-classes:hover {
     transition: none;
   }
 }
