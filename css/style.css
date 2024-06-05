@@ -132,12 +132,14 @@ header {
     color: var(--tertiary-color);
     text-shadow: 2px 4px 4px black;
     padding: 0 4rem;
-    gap: 200px;
+    gap: 100px;
   }
 
   .hero-svg {
     height: 250px;
-  
+  }
+  .hero p {
+    font-size: 1.8rem;
   }
 
 /* Classes */
