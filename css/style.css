@@ -211,8 +211,8 @@ header {
 
 .card-classes a:hover {
   scale: 1.05;
-  color: var(--tertiary-color);
-  background-color: rgb(56, 55, 55);
+  color: var(--secondary-color);
+
 
 }
 
