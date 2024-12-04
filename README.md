@@ -1,13 +1,7 @@
 # Gym-Website
-A Website for Protoss Gym a fictional upcoming gym coming to an area near you.
-Built using vanilla CSS and JS
+A Website for Protoss Gym a fictional upcoming gym coming to an area near you. Built using vanilla CSS and JS
 
----
+[Live Website](https://protoss-gym-tseidolon.netlify.app/)
 
-To do List:
-
-- [x] Finish Website Styles
-- [ ] Fix Slow Image Loading Times 
-- [ ] Deploy Page
-- [ ] Make a Log in form??
+[Mockup website made in Figma:](https://www.figma.com/design/iSSWZ9oMTRKGgQcYXrNZGc/Gym-Website?node-id=0-1&t=a0jJaurOjjLPrLL0-1)
 
